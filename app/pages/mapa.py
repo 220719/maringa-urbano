@@ -230,3 +230,50 @@ def render():
     with st.spinner("Renderizando mapa..."):
         m = build_map(gdf, osm, boundary, cats_ativas, tile, modo_cor)
         st_folium(m, width="100%", height=650, returned_objects=[])
+
+    if modo_cor == "Perfil ML (Cluster)":
+        st.markdown("---")
+        st.markdown("#### O que significa cada perfil ML?")
+        st.caption("O modelo K-Means agrupou as 47 zonas de Maringá em 3 perfis com base em 7 variáveis urbanas.")
+        c1, c2, c3 = st.columns(3)
+        with c1:
+            st.markdown("""
+            <div style="background:#1e1e2e;border-left:5px solid #42A5F5;border-radius:8px;padding:16px">
+                <div style="color:#42A5F5;font-weight:700;font-size:1rem">🏙️ Zona Consolidada</div>
+                <div style="color:#aaa;font-size:0.85rem;margin-top:8px;line-height:1.6">
+                    Zonas com <b style="color:#fff">melhor cobertura geral</b> de equipamentos urbanos.
+                    Inclui o centro, área universitária (Zona 7) e zonas nobres.
+                    IQU ponderado acima de <b style="color:#42A5F5">3.4</b>.
+                </div>
+                <div style="margin-top:10px;font-size:0.75rem;color:#555">
+                    Zonas: 1, 2, 4, 5, 7, 8, 24, 40
+                </div>
+            </div>""", unsafe_allow_html=True)
+        with c2:
+            st.markdown("""
+            <div style="background:#1e1e2e;border-left:5px solid #FFA726;border-radius:8px;padding:16px">
+                <div style="color:#FFA726;font-weight:700;font-size:1rem">🌱 Zona em Desenvolvimento</div>
+                <div style="color:#aaa;font-size:0.85rem;margin-top:8px;line-height:1.6">
+                    Zonas com <b style="color:#fff">cobertura intermediária</b>.
+                    Boa mobilidade (ônibus) mas ainda carentes em saúde e serviços essenciais.
+                    IQU ponderado entre <b style="color:#FFA726">2.0 e 3.4</b>.
+                </div>
+                <div style="margin-top:10px;font-size:0.75rem;color:#555">
+                    26 zonas — maioria do perímetro urbano
+                </div>
+            </div>""", unsafe_allow_html=True)
+        with c3:
+            st.markdown("""
+            <div style="background:#1e1e2e;border-left:5px solid #ef5350;border-radius:8px;padding:16px">
+                <div style="color:#ef5350;font-weight:700;font-size:1rem">🚧 Zona de Expansão</div>
+                <div style="color:#aaa;font-size:0.85rem;margin-top:8px;line-height:1.6">
+                    Zonas <b style="color:#fff">periféricas e de expansão urbana</b>.
+                    Alta mobilidade mas baixa cobertura em saúde, educação e segurança.
+                    <b style="color:#ef5350">Prioridade de investimento público</b>.
+                </div>
+                <div style="margin-top:10px;font-size:0.75rem;color:#555">
+                    13 zonas — periferia e expansão
+                </div>
+            </div>""", unsafe_allow_html=True)
+        st.info("💡 **Como interpretar:** Zonas da mesma cor têm perfil urbano similar. "
+                "Zonas vermelhas indicam onde a prefeitura deveria priorizar investimentos em equipamentos públicos.")
