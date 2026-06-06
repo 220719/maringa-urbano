@@ -68,18 +68,18 @@ def render_autor():
             st.link_button("🔗 LinkedIn", "https://linkedin.com/in/anuar-mincache",
                           use_container_width=True)
         with c2:
-            st.link_button("🐙 GitHub", "https://github.com/220719",
+            st.link_button("🎓 Lattes", "http://lattes.cnpq.br/",
                           use_container_width=True)
         with c3:
-            st.link_button("📦 Repositório", "https://github.com/220719/maringa-urbano",
+            st.link_button("🐙 GitHub", "https://github.com/220719/maringa-urbano",
                           use_container_width=True)
         with c4:
-            st.link_button("🔬 ORCID", "https://orcid.org/0000-0001-8528-8020",
+            st.link_button("📦 Repositório", "https://maringa-urbano-fhfmkc8evopacappzlrxlc9.streamlit.app",
                           use_container_width=True)
 
         st.markdown("""
         <div style="background:#16a34a;color:white;border-radius:20px;
                     padding:8px 16px;text-align:center;font-size:0.8rem;margin-top:8px">
-            📍 Em operação — Maringá, Paraná · Jun/2025
+            📍 Em operação — Maringá, Paraná · Jun/2025 · OSM + IBGE Censo 2022
         </div>
         """, unsafe_allow_html=True)
