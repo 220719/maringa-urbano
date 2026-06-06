@@ -1,0 +1,24 @@
+name: maringa-urbano
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - geopandas=1.0.1
+  - folium=0.19.5
+  - shapely=2.1.0
+  - pyproj=3.7.1
+  - pandas=2.2.3
+  - numpy=2.2.3
+  - scikit-learn=1.6.1
+  - matplotlib=3.10.1
+  - pip
+  - pip:
+    - duckdb==1.2.1
+    - requests==2.32.3
+    - streamlit==1.44.1
+    - streamlit-folium==0.24.0
+    - plotly==6.0.1
+    - python-dotenv==1.1.0
+    - tqdm==4.67.1
+    - pyogrio==0.12.1
