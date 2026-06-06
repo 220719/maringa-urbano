@@ -49,7 +49,7 @@ PERFIS_NOME = {
     2: "Alta Mobilidade",
 }
 
-@st.cache_data(ttl=0)
+@st.cache_data
 def load_gdf():
     gdf = gpd.read_file(PROCESSED / "maringa_iqu.geojson")
     gdf["NM_BAIRRO"]  = gdf["NM_BAIRRO"].fillna("Sem nome")
@@ -102,6 +102,7 @@ def build_map(gdf, osm, boundary, cats_ativas, tile, modo_cor):
         name="Limite Municipal", show=True,
     ).add_to(m)
 
+    # Choropleth — IQU ou Cluster
     # Choropleth — IQU ou Cluster
     def style_fn(feature):
         if modo_cor == "IQU por Setor":
