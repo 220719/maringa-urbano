@@ -57,7 +57,7 @@ def load_gdf():
     gdf["iqu_classe"] = gdf["iqu_classe"].astype(str)
     # cluster já está no GeoJSON — apenas garante tipo correto
     gdf["cluster"] = gdf["cluster"].fillna(-1).astype(int)
-    gdf["iqu_mediano"] = gdf["iqu_mediano"].fillna(0)
+
     return gdf
 
 @st.cache_data
