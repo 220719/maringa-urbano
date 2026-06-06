@@ -62,15 +62,13 @@ def render_autor():
             </p>
         </div>
         """, unsafe_allow_html=True)
-        c1, c2, c3, c4 = st.columns(4)
+        c1, c2, c3 = st.columns(3)
         with c1:
             st.link_button("🔗 LinkedIn", "https://linkedin.com/in/anuar-mincache", use_container_width=True)
         with c2:
-            st.link_button("🎓 Lattes", "http://lattes.cnpq.br/", use_container_width=True)
+            st.link_button("🎓 Lattes", "http://lattes.cnpq.br/9526608938362113", use_container_width=True)
         with c3:
-            st.link_button("🐙 GitHub", "https://github.com/220719/maringa-urbano", use_container_width=True)
-        with c4:
-            st.link_button("🌐 App", "https://maringa-urbano-fhfmkc8evopacappzlrxlc9.streamlit.app", use_container_width=True)
+            st.link_button("🐙 GitHub", "https://github.com/220719", use_container_width=True)
         st.markdown("""
         <div style="background:#16a34a;color:white;border-radius:20px;
                     padding:8px 16px;text-align:center;font-size:0.8rem;margin-top:8px">
