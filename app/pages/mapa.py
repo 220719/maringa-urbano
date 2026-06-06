@@ -55,11 +55,8 @@ def load_gdf():
     gdf["NM_BAIRRO"]  = gdf["NM_BAIRRO"].fillna("Sem nome")
     gdf["NM_SUBDIST"] = gdf["NM_SUBDIST"].fillna("Sem zona")
     gdf["iqu_classe"] = gdf["iqu_classe"].astype(str)
-    # Junta cluster por zona
-    zonas = pd.read_csv(PROCESSED / "zonas_clusters.csv")[["NM_SUBDIST","cluster","iqu_mediano"]]
-    gdf = gdf.merge(zonas, on="NM_SUBDIST", how="left")
-    gdf["cluster"]     = gdf["cluster"].fillna(-1).astype(int)
-    gdf["iqu_mediano"] = gdf["iqu_mediano"].fillna(0).round(2)
+    # cluster já está no GeoJSON — apenas garante tipo correto
+    gdf["cluster"] = gdf["cluster"].fillna(-1).astype(int)
     gdf["iqu_mediano"] = gdf["iqu_mediano"].fillna(0)
     return gdf
 
