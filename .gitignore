@@ -5,4 +5,3 @@ __pycache__/
 data/raw/PR_setores_CD2022.zip
 data/raw/PR_setores_CD2022/
 *.duckdb
-.streamlit/
