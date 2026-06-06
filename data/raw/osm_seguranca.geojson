@@ -1,0 +1,25 @@
+{
+"type": "FeatureCollection",
+"name": "osm_seguranca",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "osm_id": 1998842695, "tipo": "node", "categoria": "seguranca", "nome": "Corpo de Bombeiros", "amenity": "fire_station", "leisure": "", "shop": "", "highway": "" }, "geometry": { "type": "Point", "coordinates": [ -51.9086481, -23.426793 ] } },
+{ "type": "Feature", "properties": { "osm_id": 3098117996, "tipo": "node", "categoria": "seguranca", "nome": "Sem nome", "amenity": "fire_station", "leisure": "", "shop": "", "highway": "" }, "geometry": { "type": "Point", "coordinates": [ -51.9199012, -23.4014034 ] } },
+{ "type": "Feature", "properties": { "osm_id": 5076187666, "tipo": "node", "categoria": "seguranca", "nome": "Delegacia Policia Civil", "amenity": "police", "leisure": "", "shop": "", "highway": "" }, "geometry": { "type": "Point", "coordinates": [ -52.0656172, -23.3742129 ] } },
+{ "type": "Feature", "properties": { "osm_id": 5076187682, "tipo": "node", "categoria": "seguranca", "nome": "Sem nome", "amenity": "police", "leisure": "", "shop": "", "highway": "" }, "geometry": { "type": "Point", "coordinates": [ -52.0640995, -23.3707157 ] } },
+{ "type": "Feature", "properties": { "osm_id": 5076187703, "tipo": "node", "categoria": "seguranca", "nome": "Sem nome", "amenity": "fire_station", "leisure": "", "shop": "", "highway": "" }, "geometry": { "type": "Point", "coordinates": [ -52.0676121, -23.3656014 ] } },
+{ "type": "Feature", "properties": { "osm_id": 6003682404, "tipo": "node", "categoria": "seguranca", "nome": "Sem nome", "amenity": "police", "leisure": "", "shop": "", "highway": "" }, "geometry": { "type": "Point", "coordinates": [ -51.9847809, -23.4517472 ] } },
+{ "type": "Feature", "properties": { "osm_id": 146709544, "tipo": "way", "categoria": "seguranca", "nome": "9ª Subdivisão Policial", "amenity": "police", "leisure": "", "shop": "", "highway": "" }, "geometry": { "type": "Point", "coordinates": [ -51.9549507, -23.409639 ] } },
+{ "type": "Feature", "properties": { "osm_id": 187793926, "tipo": "way", "categoria": "seguranca", "nome": "SBMG - Setor Anti-Incêndio", "amenity": "fire_station", "leisure": "", "shop": "", "highway": "" }, "geometry": { "type": "Point", "coordinates": [ -52.014595, -23.4801868 ] } },
+{ "type": "Feature", "properties": { "osm_id": 200493374, "tipo": "way", "categoria": "seguranca", "nome": "Delegacia de Polícia Federal", "amenity": "police", "leisure": "", "shop": "", "highway": "" }, "geometry": { "type": "Point", "coordinates": [ -51.9112387, -23.4492501 ] } },
+{ "type": "Feature", "properties": { "osm_id": 200504094, "tipo": "way", "categoria": "seguranca", "nome": "Sem nome", "amenity": "fire_station", "leisure": "", "shop": "", "highway": "" }, "geometry": { "type": "Point", "coordinates": [ -51.9741229, -23.4301149 ] } },
+{ "type": "Feature", "properties": { "osm_id": 232410013, "tipo": "way", "categoria": "seguranca", "nome": "4º Batalhão de Polícia Militar", "amenity": "police", "leisure": "", "shop": "", "highway": "" }, "geometry": { "type": "Point", "coordinates": [ -51.9069494, -23.4240419 ] } },
+{ "type": "Feature", "properties": { "osm_id": 232495131, "tipo": "way", "categoria": "seguranca", "nome": "Corpo de Bombeiros", "amenity": "fire_station", "leisure": "", "shop": "", "highway": "" }, "geometry": { "type": "Point", "coordinates": [ -51.943917, -23.4173962 ] } },
+{ "type": "Feature", "properties": { "osm_id": 545532926, "tipo": "way", "categoria": "seguranca", "nome": "Delegacia de Polícia Civil - 3º Distrito Policial", "amenity": "police", "leisure": "", "shop": "", "highway": "" }, "geometry": { "type": "Point", "coordinates": [ -51.9201659, -23.4068892 ] } },
+{ "type": "Feature", "properties": { "osm_id": 559633951, "tipo": "way", "categoria": "seguranca", "nome": "Sem nome", "amenity": "police", "leisure": "", "shop": "", "highway": "" }, "geometry": { "type": "Point", "coordinates": [ -51.955433, -23.4100567 ] } },
+{ "type": "Feature", "properties": { "osm_id": 559633952, "tipo": "way", "categoria": "seguranca", "nome": "Sem nome", "amenity": "police", "leisure": "", "shop": "", "highway": "" }, "geometry": { "type": "Point", "coordinates": [ -51.9552527, -23.4096792 ] } },
+{ "type": "Feature", "properties": { "osm_id": 559633953, "tipo": "way", "categoria": "seguranca", "nome": "Sem nome", "amenity": "police", "leisure": "", "shop": "", "highway": "" }, "geometry": { "type": "Point", "coordinates": [ -51.9555323, -23.4094615 ] } },
+{ "type": "Feature", "properties": { "osm_id": 559633954, "tipo": "way", "categoria": "seguranca", "nome": "Sem nome", "amenity": "police", "leisure": "", "shop": "", "highway": "" }, "geometry": { "type": "Point", "coordinates": [ -51.9548904, -23.4094945 ] } },
+{ "type": "Feature", "properties": { "osm_id": 1073624310, "tipo": "way", "categoria": "seguranca", "nome": "Grupo de Combate ao Crime Organizado", "amenity": "police", "leisure": "", "shop": "", "highway": "" }, "geometry": { "type": "Point", "coordinates": [ -51.9367306, -23.4240671 ] } }
+]
+}
