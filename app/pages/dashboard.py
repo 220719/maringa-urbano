@@ -52,15 +52,13 @@ def render_autor():
         <div style="padding:8px 0">
             <h3 style="color:#f97316;margin-bottom:12px">Sobre este projeto</h3>
             <p style="font-size:0.95rem;line-height:1.7;color:#333">
-                Esta plataforma foi desenvolvida como parte de uma
-                <b>pesquisa em inteligência urbana</b>, integrando técnicas modernas de
-                geoprocessamento, aprendizado de máquina e dados abertos aplicados
-                à gestão pública municipal.
+                Plataforma de <b>inteligência urbana</b> que mapeia e analisa
+                equipamentos públicos de Maringá-PR, combinando
+                geoprocessamento, machine learning e dados abertos.
             </p>
             <p style="font-size:0.95rem;line-height:1.7;color:#333">
-                Os dados são reais, coletados via <b>OSM Overpass API</b> e
-                <b>IBGE Censo 2022</b>, cobrindo 47 zonas e 793 setores
-                censitários de Maringá-PR.
+                Dados reais via <b>OSM Overpass API</b> e <b>IBGE Censo 2022</b> —
+                3.072 equipamentos · 47 zonas · 793 setores censitários.
             </p>
         </div>
         """, unsafe_allow_html=True)
@@ -85,4 +83,3 @@ def render_autor():
             📍 Em operação — Maringá, Paraná · Jun/2025
         </div>
         """, unsafe_allow_html=True)
-    render_autor()
