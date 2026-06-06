@@ -277,3 +277,4 @@ def render():
             </div>""", unsafe_allow_html=True)
         st.info("💡 **Como interpretar:** Zonas da mesma cor têm perfil urbano similar. "
                 "Zonas vermelhas indicam onde a prefeitura deveria priorizar investimentos em equipamentos públicos.")
+
