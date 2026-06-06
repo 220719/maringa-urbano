@@ -59,6 +59,7 @@ def load_gdf():
     zonas = pd.read_csv(PROCESSED / "zonas_clusters.csv")[["NM_SUBDIST","cluster","iqu_mediano"]]
     gdf = gdf.merge(zonas, on="NM_SUBDIST", how="left")
     gdf["cluster"]     = gdf["cluster"].fillna(-1).astype(int)
+    gdf["iqu_mediano"] = gdf["iqu_mediano"].fillna(0).round(2)
     gdf["iqu_mediano"] = gdf["iqu_mediano"].fillna(0)
     return gdf
 
@@ -78,7 +79,10 @@ def cor_iqu(iqu):
     return "#ef5350"
 
 def cor_cluster(cluster):
-    return PERFIS_COR.get(cluster, "#888")
+    try:
+        return PERFIS_COR.get(int(cluster), "#888")
+    except:
+        return "#888"
 
 def build_map(gdf, osm, boundary, cats_ativas, tile, modo_cor):
     m = folium.Map(location=[-23.425, -51.938], zoom_start=12, tiles=None)
