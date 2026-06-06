@@ -49,7 +49,7 @@ PERFIS_NOME = {
     2: "Alta Mobilidade",
 }
 
-@st.cache_data
+@st.cache_data(ttl=0)
 def load_gdf():
     gdf = gpd.read_file(PROCESSED / "maringa_iqu.geojson")
     gdf["NM_BAIRRO"]  = gdf["NM_BAIRRO"].fillna("Sem nome")
