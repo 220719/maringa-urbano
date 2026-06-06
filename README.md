@@ -94,7 +94,7 @@ Executar o app:
 
     streamlit run app/main.py
 
-Acesse em http://localhost:8501
+Acesse em https://maringa-urbano-fhfmkc8evopacappzlrxlc9.streamlit.app
 
 ---
 
