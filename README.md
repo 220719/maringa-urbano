@@ -3,6 +3,9 @@
 > Plataforma de análise e visualização de equipamentos urbanos de Maringá-PR, combinando dados abertos do OpenStreetMap e IBGE Censo 2022 com Machine Learning e geoprocessamento.
 
 ![Python](https://img.shields.io/badge/Python-3.12-blue)
+![Streamlit](https://img.shields.io/badge/App-Live-success)
+
+🚀 **[Acesse o app ao vivo](https://maringa-urbano-fhfmkc8evopacappzlrxlc9.streamlit.app)**
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.44-red)
 ![GeoPandas](https://img.shields.io/badge/GeoPandas-1.0-green)
 
