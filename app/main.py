@@ -48,7 +48,7 @@ with st.sidebar:
         [
             "🏠  Dashboard",
             "🗺️  Mapa de Cobertura",
-            "📊  Análise por Bairro",
+            "📊  Análise por Zona",
             "🤖  ML — Perfil Urbano",
         ],
         label_visibility="collapsed"
@@ -75,7 +75,7 @@ with st.sidebar:
 paginas = {
     "🏠  Dashboard":          "dashboard",
     "🗺️  Mapa de Cobertura":  "mapa",
-    "📊  Análise por Bairro": "bairros",
+    "📊  Análise por Zona": "bairros",
     "🤖  ML — Perfil Urbano": "ml",
 }
 
