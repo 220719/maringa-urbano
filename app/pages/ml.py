@@ -6,7 +6,7 @@ from pathlib import Path
 
 PROCESSED = Path(__file__).parent.parent.parent / "data" / "processed"
 
-FEATURES    = ["saude","educacao","mobilidade","qualidade_vida","servicos_essenciais","seguranca","iqu_mediano"]
+FEATURES    = ["saude","educacao","mobilidade","qualidade_vida","servicos_essenciais","seguranca","iqu_ponderado"]
 LABELS_PT   = ["Saúde","Educação","Mobilidade","Qual. Vida","Serviços","Segurança","IQU"]
 
 PERFIS = {
@@ -80,7 +80,7 @@ O modelo analisa cada zona com base em **7 variáveis**:
         color="perfil_nome",
         color_discrete_map={v[0]: v[1] for v in PERFIS.values()},
         hover_name="NM_SUBDIST",
-        hover_data={"iqu_mediano":":.2f","pca_x":False,"pca_y":False,
+        hover_data={"iqu_ponderado":":.2f","pca_x":False,"pca_y":False,
                     "perfil_nome":False,"perfil_cor":False,
                     "saude":True,"educacao":True,"mobilidade":True},
         template="plotly_dark",
@@ -149,7 +149,7 @@ O modelo analisa cada zona com base em **7 variáveis**:
     # Explorador por grupo
     st.markdown("#### Explorar Zonas por Grupo")
     grupo_sel = st.selectbox("Selecione o perfil:", [v[0] for v in PERFIS.values()])
-    df_sel    = df[df["perfil_nome"]==grupo_sel].sort_values("iqu_mediano", ascending=False)
+    df_sel    = df[df["perfil_nome"]==grupo_sel].sort_values("iqu_ponderado", ascending=False)
     cor_sel   = df_sel["perfil_cor"].iloc[0]
 
     c1,c2,c3 = st.columns(3)
@@ -162,7 +162,7 @@ O modelo analisa cada zona com base em **7 variáveis**:
         row  = df_sel.iloc[i:i+3]
         cols = st.columns(3)
         for j, (_, r) in enumerate(row.iterrows()):
-            pct = min(r["iqu_mediano"]/10*100, 100)
+            pct = min(r["iqu_ponderado"]/10*100, 100)
             with cols[j]:
                 st.markdown(f"""
                 <div style="background:#1e1e2e;border-left:4px solid {cor_sel};
