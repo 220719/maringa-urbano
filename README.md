@@ -139,11 +139,22 @@ Acesse em https://maringa-urbano-fhfmkc8evopacappzlrxlc9.streamlit.app
 
 ## Autor
 
-**Anuar Mincache**
-- GitHub: https://github.com/220719
-- LinkedIn: https://linkedin.com/in/anuar-mincache
-- ORCID: https://orcid.org/0000-0001-8528-8020
+---
+
+<div align="center">
+
+### Anuar Mincache
+
+**PhD Physics | Data Science | Machine Learning | Research & Development | Data-Driven Decision Making**
+
+📧 ajmincache2@uem.br &nbsp;|&nbsp; 🔗 [LinkedIn](https://linkedin.com/in/anuar-mincache) &nbsp;|&nbsp; 🐙 [GitHub](https://github.com/220719)
 
 ---
 
-*Dados: OSM Overpass API + IBGE Censo 2022 · Maringá-PR · Jun/2025*
+**Construído com dados reais do OSM Overpass API + IBGE Censo 2022**
+
+🌐 [App ao Vivo](https://maringa-urbano-fhfmkc8evopacappzlrxlc9.streamlit.app) &nbsp;|&nbsp; 📦 [Repositório](https://github.com/220719/maringa-urbano) &nbsp;|&nbsp; 🔬 [ORCID](https://orcid.org/0000-0001-8528-8020)
+
+*Maringá-PR · Jun/2025*
+
+</div>
